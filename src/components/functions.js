@@ -9,6 +9,18 @@ function getCommonLetters(firstName, secondName) {
   }
   return commonChars;
 }
+
+function getFlamesSecondMethod(remainingChars) {
+  let flamesOrder = "FLAMES";
+
+  for (let i = 0; i < 6; i++) {
+    const indexToRemove = (remainingChars) % flamesOrder.length;
+    console.log(flamesOrder);
+    flamesOrder = flamesOrder.replace(flamesOrder[indexToRemove-1], "");
+  }
+
+  return flamesOrder;
+}
 function getFlames(num) {
   num = num % 6;
   switch (num) {

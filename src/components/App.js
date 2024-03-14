@@ -8,7 +8,7 @@ class App extends Component {
     // this.inp1Val = "a";
     // this.inp2Val = "b";
     this.state = {
-      answer: "",
+      answer: "Marriage",
       input1Value: "",
       input2Value: "",
     };
