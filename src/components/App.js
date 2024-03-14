@@ -47,15 +47,21 @@ class App extends Component {
       console.log(result);
     };
     const clearInputFields = () => {
-    //   this.inp1Val = "";
-    //   this.inp2Val = "";
-      this.setState({ ...this.state, input1Value: "", input2Value: "", answer: "" });
+      //   this.inp1Val = "";
+      //   this.inp2Val = "";
+      this.setState({
+        ...this.state,
+        input1Value: "",
+        input2Value: "",
+        answer: "",
+      });
     };
     return (
       <div id="main">
         {/* Do not remove the main div */}
         <input
           type="text"
+          name="name1"
           data-testid="input1"
           onChange={(e) =>
             this.manageInputs(
@@ -67,6 +73,7 @@ class App extends Component {
         />
         <input
           type="text"
+          name="name2"
           data-testid="input2"
           onChange={(e) =>
             this.manageInputs(
